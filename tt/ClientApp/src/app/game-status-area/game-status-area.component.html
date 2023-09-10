@@ -1,0 +1,14 @@
+<div class="game-status-area">
+    <div class="status-item">
+      <strong>{{player.user}}</strong> 
+      </div>
+    <div class="status-item">
+      <strong>Phase:</strong> {{ gamePhase }}
+    </div>
+  
+    <div class="status-item">
+      <strong>Time Left:</strong> {{ getMinutes() }}:{{ getSeconds() | number: '2.0' }}
+    </div>
+    <!-- TODO: Add more game status items as needed -->
+  </div>
+  

@@ -1,0 +1,24 @@
+<app-nav-menu></app-nav-menu>
+<div class="voting-area">
+    <h2>Voting Area</h2>
+    kill connection
+  
+    <ul class="player-list">
+      <li *ngFor="let player of players" >
+        <button (click)="selectPlayer(player.playerId)" [class.selected]="selectedPlayerId === player.playerId">
+          {{ player.user }}
+        </button>
+      </li>
+    </ul>
+  
+    <div class="vote-options">
+      <label>
+        <input type="checkbox" [(ngModel)]="isVoteIncognito" (change)="toggleIncognito()">
+        Vote Incognito
+      </label>
+      <button (click)="castVote()" [disabled]="selectedPlayerId === null">Cast Vote</button>
+    </div>
+  
+    <!-- TODO: Add a component or service for displaying voting results -->
+  </div>
+  

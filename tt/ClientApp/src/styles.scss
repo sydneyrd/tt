@@ -1,0 +1,57 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+html, body { height: 100%;
+  background-color: var(--background-color);
+  font-family: 'Press Start 2P', cursive; 
+  color: var(--text-color);
+  transition: color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+i {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+header {
+  background-color: #000;
+  color: var(--text-color);
+}
+.navbar {
+  background-color: var(--background-color) !important;
+  border: none !important;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: var(--text-color) !important;
+}
+.footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 1rem;
+position: fixed;
+}
+.fixed-color-picker {
+  position: fixed;
+  bottom: 0;
+  height:1rem;
+  width: 100%;
+  z-index: 1000;  /* This ensures that the color picker is always on top */
+}

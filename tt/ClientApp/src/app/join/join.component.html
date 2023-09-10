@@ -1,0 +1,25 @@
+<app-nav-menu></app-nav-menu>
+
+<button (click)="findGame()">play</button>
+
+
+<button (click)="createGame()">create a game</button>
+<div *ngIf="gameId">
+    <p>Game ID: {{ gameId }}</p>
+    <button (click)="copyGameId()">Copy to Clipboard</button>
+  </div>
+<button (click)="joinGameButton()">join a game with code</button>
+<div *ngIf="showGameCodeInput">
+    <input type="text" [(ngModel)]="gameCode" name="gameCode" placeholder="Enter game code">
+    <button (click)="joinGame()">Join</button>
+  </div>
+
+
+  <ng-container *ngIf="showLoadingScreen">
+    <loading-screen></loading-screen>
+  </ng-container>
+  
+  <div *ngIf="!showLoadingScreen">
+    <!-- Your existing template code here -->
+  </div>
+  

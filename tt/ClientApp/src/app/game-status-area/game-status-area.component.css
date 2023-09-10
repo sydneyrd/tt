@@ -1,0 +1,12 @@
+.game-status-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--background-color);
+  }
+  
+  .status-item {
+    margin: 1em;
+  }
+  

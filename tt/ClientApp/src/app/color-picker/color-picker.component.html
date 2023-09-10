@@ -1,0 +1,12 @@
+<div tabindex="0" (keydown)="onKeydown($event)"  (focus)="onFocus()" (blur)="onBlur()" class="color-picker">
+  
+    <i class="fas fa-arrow-up" (click)="changeBackgroundColor('up')"></i>
+    <i class="fas fa-arrow-left" (click)="changeColor('prev')"></i>
+    <span>{{this.currentBackgroundColor}} 
+    <span >{{this.currentColor}}</span></span>
+    <i class="fas fa-arrow-right" (click)="changeColor('next')"></i>
+    <i class="fas fa-arrow-down" (click)="changeBackgroundColor('down')"></i>
+      <div class="cursor-icon" *ngIf="isFocused"></div>
+  </div>
+  
+  

@@ -1,0 +1,37 @@
+.voting-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--background-color);
+  }
+  
+  .player-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .player-list li {
+    margin-bottom: 1em;
+  }
+  
+  .player-list .selected {
+    background-color: #a8e6cf;
+  }
+  
+  .player-list .eliminated {
+    text-decoration: line-through;
+    color: #d3d3d3;
+  }
+  
+  .vote-options {
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+  }
+  
+  .vote-options label {
+    display: flex;
+    align-items: center;
+  }
+  

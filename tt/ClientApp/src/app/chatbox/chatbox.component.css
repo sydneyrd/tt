@@ -1,0 +1,141 @@
+.terminal {
+  color: var(--text-color);
+  filter: brightness(70%);
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px; 
+  background-color: var(--background-color);
+  filter: brightness(70%);
+  overflow: auto;
+  border-radius: 10px;
+  display: flex; /* Add flexbox */
+  flex-direction: column; /* Align children vertically */
+  top: 0;
+  bottom: 0;
+  right:0;
+  height:100%;
+  max-width: 100%;
+
+}
+  .message {
+    margin-bottom: 10px;
+    word-wrap: break-word; 
+    flex-wrap:wrap;
+    max-width: 60%;
+  }
+  
+  .message-received .user {
+    font-weight: bold;
+    color: #0f0;
+    max-width: 60%;
+  }
+  .message-sent .user {
+    font-weight: bold;
+    color: #666;
+    max-width: 60%;
+  }
+  .input-form {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: auto; /* Move the input form to the bottom */
+    
+  }
+  .prompt-symbol {
+    margin-right: 5px;
+    color: var(--text-color);
+    animation: blink 1s infinite;
+    size: larger;
+    font-weight: bold;
+  }
+  .message.sent {
+    align-self: flex-end;
+    background-color: var(--text-color);
+    border-radius: 5px;
+    color: var(--background-color);
+    margin: 5px;
+    padding: 10px;
+    max-width: 60%; /* to ensure the messages don't stretch too far */
+  }
+  
+  .message.received {
+    align-self: flex-start;
+    background-color: #666;
+    border-radius: 5px;
+    color: #fff;
+    margin: 5px;
+    padding: 10px;
+    max-width: 60%;
+  }
+  
+  .input-box {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: none;
+  }
+  .input-box:focus {
+    outline: none;
+  }
+  @keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  .send-button {
+    padding: 5px 5px;
+    color: var(--background-color);
+    background-color: var(--text-color);
+    border: 1px solid var(--text-color);
+    cursor: pointer;
+    filter: Reverse;
+    font: bold;
+    min-width: 50px;
+    text-align: center;
+    border-radius: 5px;
+  
+  }
+  
+  .send-button:hover {
+    background-color: #0f0;
+    color: #000;
+  }
+  @keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+/* Hide scrollbar for Chrome, Safari and Opera */
+.terminal::-webkit-scrollbar {
+  width: 12px; /* Adjust scrollbar width */
+}
+
+/* Scrollbar track */
+.terminal::-webkit-scrollbar-track {
+  background-color: var(--background-color);
+  filter: brightness(70%);
+}
+
+/* Scrollbar handle */
+.terminal::-webkit-scrollbar-thumb {
+  color: var(--text-color);
+  border-radius: 6px; /* Round the handle edges */
+}
+
+/* Scrollbar handle on hover */
+.terminal::-webkit-scrollbar-thumb:hover {
+  color: var(--text-color);
+  filter: brightness(20%);
+}
+.terminal {
+  scrollbar-color: var(--text-color) var(--background-color);
+  scrollbar-width: thin;
+}
+
+.send-button .material-icons {
+  font-size: 24px; /* Adjust based on your needs */
+  line-height: 36px; /* Adjust based on your needs */
+  size-adjust: fit-content;
+}

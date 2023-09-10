@@ -1,0 +1,25 @@
+.game-input-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    justify-content: flex-end;
+    color: var(--text-color);
+filter: brightness(70%);
+font-family: 'Courier New', Courier, monospace;
+padding: 20px;
+background-color: var(--background-color);
+}
+
+.game-input-title {
+    text-align: center;
+}
+.game-content {
+    color: var(--text-color);
+    filter: brightness(70%);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    background-color: var(--background-color);
+}

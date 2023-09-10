@@ -1,0 +1,33 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--text-color);
+}
+
+.dot {
+  animation: dot 2s infinite;
+}
+
+.dot1 {
+  animation-delay: 0.4s;
+}
+
+.dot2 {
+  animation-delay: 0.8s;
+}
+
+.dot3 {
+  animation-delay: 1.2s;
+}
+
+@keyframes dot {
+  0%, 80%, 100% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}

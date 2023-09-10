@@ -1,0 +1,15 @@
+
+<div class="terminal"  #chatbox>
+  <div *ngFor="let message of messages" [class.sent]="message.user === player.user" [class.received]="message.user !== player.user" class="message">
+    <span class="user">{{message.user}}: </span>
+    <span class="text" >{{message.text }}</span>
+  </div>
+  
+  <form (submit)="sendMessage($event)" class="input-form">
+    <span class="prompt-symbol">></span>
+  <input [(ngModel)]="newMessage" name="newMessage" class="input-box"/>
+  <button mat-icon-button type="submit" class="send-button">
+    <i class="material-icons">chat</i>
+</button>
+</form>
+</div>
